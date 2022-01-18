@@ -22,7 +22,9 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 10px;
+    margin: 20px;
+    color: #42526e;
+    
 }
 .shop{
     border: solid #eff2f7;
@@ -41,6 +43,14 @@ nav{
    
 
 }
+.container{
+    position: relative;
+}
+.seacrhi{
+    position: absolute;
+  top: 8px;
+  right: 16px;
+}
 .head{
     display: flex;
     flex-wrap: wrap;
@@ -48,4 +58,14 @@ nav{
     border-left:1px solid gray;
     padding: 10px;
     padding-left: 20px;
+}
+.contuct{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #333333;
+    color: #fff;
+}
+.one{
+    padding: 20px;
 }
