@@ -59,7 +59,24 @@ nav{
     padding: 10px;
     padding-left: 20px;
 }
+.category{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 
+}
+.category .two{
+    border: 1px solid rgb(228, 226, 226);
+    font-size: 20px;
+    
+    padding: 50px;
+    margin: 5px;
+}
+
+.cat h2{
+    text-align: right;
+}
 
 /* Slideshow container */
 .slideshow-container {
