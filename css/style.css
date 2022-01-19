@@ -38,7 +38,7 @@ nav{
     border: solid #eff2f7;
     background-color: #eff2f7;
     padding: 10px;
-    width: 600px;
+    width: 100%;
     border-radius: 50px;
    
 
@@ -48,8 +48,8 @@ nav{
 }
 .seacrhi{
     position: absolute;
-  top: 8px;
-  right: 16px;
+  top: 25px;
+  right: 25px;
 }
 .head{
     display: flex;
@@ -66,7 +66,7 @@ nav{
     
 
 }
-.category .two{
+.category div{
     border: 1px solid rgb(228, 226, 226);
     font-size: 20px;
     
@@ -225,7 +225,7 @@ input[type=text], input[type=password] {
   
   /* Set a style for all buttons */
  .btn2 {
-    background-color: #42526e;
+    background-color: red;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -302,7 +302,7 @@ input[type=text], input[type=password] {
   
   .close:hover,
   .close:focus {
-    color: red;
+    color: rgb(80, 74, 74);
     cursor: pointer;
   }
   
@@ -331,4 +331,64 @@ input[type=text], input[type=password] {
     .cancelbtn {
        width: 100%;
     }
+  } 
+  .shows{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 10px;
+  }
+  .shows img{
+width: 290px;
+  }
+  .shows2{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+  }
+  .shows2 img{
+    width: 600px;
+  }
+  .cat{
+    margin: 20px;
+  }
+  .category i{ 
+    border-radius: 50%;
+    padding: 5px;
+    font-size:30px;
+    
+    color: #fff;
+  }
+  .category .one i{
+    background-color: #1b8bbb;
+    border: solid #1b8bbb;
+  }
+  .category .two i{
+    background-color: #6db52a;
+    border: solid #6db52a;
+  }
+  .category .three i{
+    background-color: #cb3278;
+    border: solid #cb3278;
+  }
+  .category .four i{
+    background-color: #f67828;
+    border: solid #f67828;
+  }
+  .category .five i{
+    background-color: #786a9b;
+    border: solid #786a9b;
+  }
+  .category .six i{
+    background-color: #603229;
+    border: solid #603229;
+  }
+  .category .seven i{
+    background-color: #ad1346;
+    border: solid #ad1346;
+  } 
+  .category div{
+    display: grid;
+    grid-template-rows:  auto;
+    
+    justify-content: center;
   }
