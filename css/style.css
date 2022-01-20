@@ -117,7 +117,19 @@ nav{
   color: #fff;
   background-color: #d40b0e;
 }
+/* basket counter */
+.cart-counter{
+  
+  width:20px;
 
+  height:20px;
+  background:#d40b0e;
+  color: #fff;
+  text-align:center;
+  border-radius:50%;
+  
+  
+}
 
 /* Slideshow container */
 .slideshow-container {
