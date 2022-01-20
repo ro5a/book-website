@@ -1,8 +1,10 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
 }
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Slab&family=Tajawal&display=swap');
 /* header style section one */
 ul{
     display: flex;
@@ -78,6 +80,10 @@ nav{
 
 .cat h2{
     text-align: right;
+}
+.title-book{
+  margin: 20px;
+  font-weight: bold;
 }
 
 
