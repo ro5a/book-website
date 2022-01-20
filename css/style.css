@@ -85,6 +85,38 @@ nav{
   margin: 20px;
   font-weight: bold;
 }
+/* ************************************************* */
+.showbook{
+  border: 1px solid rgb(201, 200, 200);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  justify-content: center;
+}
+.showbook i{
+  text-align: center;
+  color: #42526e;
+  text-transform: capitalize;
+}
+.showbook p{
+  text-align: center;
+  color: #42526e;
+}
+.addprod{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 5px;
+}
+.addprod .baskets{
+  border: 1px solid #d40b0e ;
+  border-radius: 50%;
+  padding: 10px;
+  color: #fff;
+  background-color: #d40b0e;
+}
 
 
 /* Slideshow container */
@@ -95,6 +127,7 @@ nav{
 }
 
 /* Hide the images by default */
+
 .mySlides {
   display: none;
 }
