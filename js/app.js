@@ -43,14 +43,15 @@ $(document).ready(function(){
 
 //search
 function myFunction() {
-  input = document.getElementById("Search");
-  filter = input.value.toUpperCase();
-  for (i=0; i<document.getElementsByClassName('target').length; i++){
-if(document.getElementsByClassName('target'[i].innerHTML.toUpperCase().indexOf(filter) > -1) {     
-  document.getElementsByClassName("target")[i].style.display = "none";
-          }
-      else{
-        document.getElementsByClassName("target")[i].style.display = "";
-      } 
+  var input = document.getElementById("Search");
+  var filter = input.value.toLowerCase();
+  var nodes = document.getElementsByClassName('target');
+
+  for (i = 0; i < nodes.length; i++) {
+    if (nodes[i].innerText.toLowerCase().includes(filter)) {
+      nodes[i].style.display = "block";
+    } else {
+      nodes[i].style.display = "none";
+    }
   }
 }
