@@ -40,3 +40,17 @@ $(document).ready(function(){
            });
        }); 
 });
+
+//search
+function myFunction() {
+  input = document.getElementById("Search");
+  filter = input.value.toUpperCase();
+  for (i=0; i<document.getElementsByClassName('target').length; i++){
+if(document.getElementsByClassName('target'[i].innerHTML.toUpperCase().indexOf(filter) > -1) {     
+  document.getElementsByClassName("target")[i].style.display = "none";
+          }
+      else{
+        document.getElementsByClassName("target")[i].style.display = "";
+      } 
+  }
+}
