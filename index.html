@@ -39,9 +39,34 @@
         </div>
     
         <div class="container" style="background-color:#f1f1f1;"align="center">
+          <a onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="cancelbtn">create account</a><br><br>
           <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">cancel</button><br><br>
-          <a href="create.html" class="cancelbtn">create account</a>
+         
         </div>
+      </form>
+    </div>
+    <!-- model of create account -->
+    <div id="id02" class="modal">
+      <form class="contain modal-content animate"
+      action="index.html" align="center" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+       
+      </div>
+          <h2>create account</h2>
+          <hr>
+          <input class="input1" type="number" name="number" placeholder="phone number">
+          <input class="country" type="numder" placeholder="code of country"><br><br>
+          <label style="color: #ccc;" for="">we will send you code number by SMS message</label>
+          <button>SEND CODE number</button>
+          <input class="input" type="text" name="fname" placeholder="first name">
+          <input class="input" type="text " name="sname" placeholder="second name">
+          <input class="input" type="email" name="email" placeholder="Email">
+          <input class="input" type="email" name="confirm-email" placeholder="confirm email">
+          <input  class="input"type="password" name="password" placeholder="password">
+          <button>Create account</button><br>
+          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">cancel</button><br><br>
+          <span>Are you have account? <a href="index.html" style="text-decoration: none; color: #1b8bbb;">login</a></span>
       </form>
     </div>
      <div class="head"> <i class="fa fa-star"> </i>&nbsp; <li>home</li></div>
