@@ -1,65 +1,52 @@
-const progressBar = document.getElementById("progress-bar");
-const progressNext = document.getElementById("progress-next");
-const progressPrev = document.getElementById("progress-prev");
-const steps = document.querySelectorAll(".step");
-let active = 1;
-progressNext.addEventListener("click", () => {
-    active++;
-    if (active > steps.length) {
-      active = steps.length;
-    }
-    updateProgress();
-  });
-  
-  progressPrev.addEventListener("click", () => {
-    active--;
-    if (active < 1) {
-      active = 1;
-    }
-    updateProgress();
-  });
-  function updateProgress () {
-    // toggle active class on list items
-    steps.forEach((step, i) => {
-      if (i < active) {
-        step.classList.add("active");
-      } else {
-        step.classList.remove("active");
-      }
-    });
-    // set progress bar width  
-    progressBar.style.width = 
-      ((active - 1) / (steps.length - 1)) * 100 + "%";
-    // enable disable prev and next buttons
-    if (active === 1) {
-      progressPrev.disabled = true;
-    } else if (active === steps.length) {
-      progressNext.disabled = true;
-    } else {
-      progressPrev.disabled = false;
-      progressNext.disabled = false;
-    }
-  };
+const formBtn1 = document.querySelector("#btn-1")
+const formBtnPrev2 = document.querySelector("#btn-2-prev")
+const formBtnNext2 = document.querySelector("#btn-2-next")
+const formBtn3 = document.querySelector("#btn-3")
+// Button listener of form 1
+formBtn1.addEventListener("click", function(e) {
+  gotoNextForm(formBtn1, formBtnNext2, 1, 2)
+  e.preventDefault()
+})
 
-  const activeSteps = document.querySelectorAll(".active");
-  line.style.width =
-    ((activeSteps.length - 1) / (steps.length - 1)) * 100 + "%";
+// Next button listener of form 2
+formBtnNext2.addEventListener("click", function(e) {
+  gotoNextForm(formBtnNext2, formBtn3, 2, 3)
+  e.preventDefault()
+})
 
-  // call pages to iframe
-  const pages = document.getElementById("pages");
-  const modelContainer = document.getElementById("model");
+// Previous button listener of form 2
+formBtnPrev2.addEventListener("click", function(e) {
+  gotoNextForm(formBtnNext2, formBtn1, 2, 1)
+  e.preventDefault()
+})
 
-  if (index == 0 || index == 1) {
-    pages.setAttribute("src", "stepOne.html");
-  } else if (index == 2) {
-    pages.setAttribute("src", "stepTwo.html");
-  } else if (index == 3) {
-    pages.setAttribute("src", "stepThree.html");
-  } else {
-    modelContainer.style.visibility = "visible";
-  }
-  const btn = document.getElementById("btn");
-
-  modelContainer.addEventListener("click", () => {
-    modelContainer.style.visibility = "hidden";
-  });
+// Button listener of form 3
+formBtn3.addEventListener("click", function(e) {
+  document.querySelector(`.step--3`).classList.remove("step-active")
+  document.querySelector(`.step--4`).classList.add("step-active")
+  formBtn3.parentElement.style.display = "none"
+  document.querySelector(".form--message").innerHTML = `
+   <h1 class="form--message-text">completed buying process for successfuly</h1>
+   `
+  e.preventDefault()
+})
+const gotoNextForm = (prev, next, stepPrev, stepNext) => {
+  // Get form through the button
+  const prevForm = prev.parentElement
+  const nextForm = next.parentElement
+  const nextStep = document.querySelector(`.step--${stepNext}`)
+  const prevStep = document.querySelector(`.step--${stepPrev}`)
+  // Add active/inactive classes to both previous and next form
+  nextForm.classList.add("form-active")
+  nextForm.classList.add("form-active-animate")
+  prevForm.classList.add("form-inactive")
+  // Change the active step element
+  prevStep.classList.remove("step-active")
+  nextStep.classList.add("step-active")
+  // Remove active/inactive classes to both previous an next form
+  setTimeout(() => {
+    prevForm.classList.remove("form-active")
+    prevForm.classList.remove("form-inactive")
+    nextForm.classList.remove("form-active-animate")
+  }, 1000)
+}

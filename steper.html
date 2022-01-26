@@ -9,25 +9,62 @@
     <link rel="stylesheet" href="css/steper.css">
 </head>
 <body>
-    <header>
-
-    </header>
-    <div id="progress">
-        <div id="progress-bar"></div>
-        <ul id="progress-num">
-          <li class="step active">1</li>
-          <li class="step">2</li>
-          <li class="step">3</li>
-          <li class="step">4</li>
-        </ul>
-      </div>
-      <div>
-        <button id="progress-prev" class="btn" disabled>Prev</button>
-        <button id="progress-next" class="btn">Next</button>
-      </div>
-      <footer>
-
-      </footer>
+    <main>
+        <div class="stepper">
+          <div class="step--1 step-active"> 1</div>
+          <div class="step--2"> 2</div>
+          <div class="step--3"> 3</div>
+          <div class="step--4">4</div>
+        </div>
+        <form class="form form-active">
+          <div class="form--header-container">
+            <h1 class="form--header-title">
+              Personal Information
+            </h1>
+      
+          
+          </div>
+          <label for="">full name</label><br>
+          <input type="text" name="name" placeholder="Enter your full name"><br>
+          <label for="">phone number</label><br>
+          <input type="text" name="phone" placeholder="Enter your phone"><br>
+          <label for="">Address</label><br>
+          <input type="text" name="adderss" placeholder="Enter your address">
+          <button class="form__btn" id="btn-1">Next</button>
+        </form>
+        <form class="form">
+          <div class="form--header-container">
+            <h1 class="form--header-title">
+              Payment mathod
+            </h1>
+      
+           
+          </div>
+      
+          <input type="radio" name="payment" id=""><label for="">paypal</label>
+                      <input type="radio" name="payment" id=""> <label for="">SRC payment</label><br>
+                      <input type="radio" name="payment" id=""> <label for="">VISA</label>
+                      <input type="radio" name="payment" id=""> <label for="">MASTER card</label><br>
+                      <label for="">Quantity</label><br>
+                      <input class="quantity" id="id_form-0-quantity" min="0" name="form-0-quantity" value="1" type="number" style="margin: 10px;"><br>
+          <button class="form__btn" id="btn-2-prev">Previous</button>
+          <button class="form__btn" id="btn-2-next">Next</button>
+        </form>
+        <form class="form">
+          <div class="form--header-container">
+            <h1 class="form--header-title">
+              Confirm buying process
+            </h1>
+      
+    
+          </div>
+          <input type="text" placeholder="price" />
+          <input type="text" placeholder="" />
+          
+          <button class="form__btn" id="btn-3">Submit</button>
+        </form>
+        <div class="form--message"></div>
+      </main>
       <script src="js/steper.js"></script>
 </body>
 </html>
