@@ -31,7 +31,7 @@ main {
 .step--2,
 .step--3,
 .step--4 {
-  border: 3px solid lightgray;
+  border: 3px solid rgb(33, 112, 177);
   border-radius: 100%;
   width: 25px;
   height: 25px;
@@ -42,12 +42,9 @@ main {
   font-size: 14px;    
   position: relative;
   z-index: 1;
+  margin: 10px;
 }
-.step--1,
-.step--2,
-.step--3 {
-  border-right: 1px solid #666;
-}
+
 .form {
   background: #fff;
   text-align: center;
@@ -55,7 +52,7 @@ main {
   width: 25rem;
   box-shadow: 0.2rem 0.2rem 0.5rem rgba(51, 51, 51, 0.2);
   display: none;
-  border-radius: 1rem;
+  border-radius: 5px;
   overflow: hidden;
 }
 .form--header-container {
@@ -82,6 +79,14 @@ input[type="text"] {
   display: block;
   border-radius: 0.5rem;
   outline: none;
+  border: 1px solid #bdbdbb;
+}
+.quantity{
+   
+    margin: auto;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    outline: none;
   border: 1px solid #bdbdbb;
 }
 
@@ -121,9 +126,9 @@ input[type="text"] {
 }
 
 .step-active {
-  background: #666;
+  background: rgb(33, 112, 177);
   color: #fff;
-  border: 1px solid #666;
+  border: 1px solid rgb(33, 112, 177);
 }
 @keyframes moveRight {
   0% {
