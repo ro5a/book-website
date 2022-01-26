@@ -93,6 +93,37 @@ nav{
   margin: 20px;
   font-weight: bold;
 }
+.sliderrange {
+  -webkit-appearance: none;
+  margin: 10px;
+  width: 90%;
+  height: 20px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.sliderrange:hover {
+  opacity: 1;
+}
+
+.sliderrange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  background: #d40b0e;
+  cursor: pointer;
+}
+
+.sliderrange::-moz-range-thumb {
+  width: 28px;
+  height: 28px;
+  background: #d40b0e;
+  cursor: pointer;
+}
 /* ************************************************* */
 .showbook{
   border: 1px solid rgb(201, 200, 200);
@@ -535,6 +566,11 @@ width: 290px;
   .results .title1{
     color: #2168d3;
     
+    
+  }
+  .title1 a{
+    text-decoration: none;
+    color: #2168d3;
   }
   .box{
     border-radius: 5px;
@@ -576,6 +612,9 @@ width: 290px;
     padding: 10px;
   }
   .row2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     border: 1px solid #c0cfdf;
     padding: 10px;
     background-color: #edf6ff;
