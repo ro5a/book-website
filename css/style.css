@@ -461,17 +461,27 @@ input[type=text], input[type=password] {
     }
   } 
   .shows{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    column-gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
   }
   .shows img{
-width: 290px;
+width: 300px;
   }
+  @media  only screen and(max-width:650px) {
+    .shows img{
+     width: 200px;
+
+    }
+    
+  }
+  
   .shows2{
-    display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 10px;
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+    
   }
   .shows2 img{
     width: 600px;

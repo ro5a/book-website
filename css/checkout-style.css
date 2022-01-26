@@ -89,3 +89,9 @@ color: rgb(0, 162, 255);
   .terms{
       margin-top: 40px;
   }
+  .numberinput{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+  
