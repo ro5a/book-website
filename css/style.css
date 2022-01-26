@@ -19,9 +19,37 @@ ul li{
     list-style: none;
 }
 nav{
+  
     background-color:#f9fafc ;
     border-bottom:1px solid gray ;
     color: #42526e;
+}
+nav .icon{
+  display: none;
+  color:#42526e;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  nav .head:not(:first-child) {display: none;}
+  nav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav.responsive {position: relative;}
+  nav.responsive .icon {
+    position: absolute;
+   
+  }
+  nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+  }
 }
 /* header style section two */
 .head2{
