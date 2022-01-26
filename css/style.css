@@ -647,6 +647,9 @@ width: 300px;
     border-left:5px solid #fed502;
     padding: 10px;
   }
+  #num{
+    padding: 5px;
+  }
   .btnb{
     background-color: #d40b0e;
     padding: 10px;

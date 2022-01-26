@@ -27,6 +27,7 @@ main {
   top: 5%;
 }
 
+
 .step--1,
 .step--2,
 .step--3,
@@ -101,7 +102,10 @@ input[type="text"] {
   text-transform: uppercase;
   font-weight: 700;
   cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
+
 .form--message-text {
   width: 25rem;
   background: #fff;

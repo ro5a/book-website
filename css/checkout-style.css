@@ -94,4 +94,9 @@ color: rgb(0, 162, 255);
       flex-wrap: wrap;
       justify-content: space-between;
   }
-  
+  .quantity{
+      margin-top: 20px;
+  }
+  .quantity input{
+      padding: 10px;
+  }
