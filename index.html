@@ -40,7 +40,7 @@
         </div>
     
         <div class="container" style="background-color:#f1f1f1;"align="center">
-          <a onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="cancelbtn">create account</a><br><br>
+          <a onclick="document.getElementById('id02').style.display='block'"  class="cancelbtn">create account</a><br><br>
           <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">cancel</button><br><br>
          
         </div>
@@ -70,14 +70,14 @@
           <span>Are you have account? <a href="index.html" style="text-decoration: none; color: #1b8bbb;">login</a></span>
       </form>
     </div>
-     <div class="head"> <i class="fa fa-star"> </i>&nbsp; <a href="index.html" style="text-decoration: none;"> <li>home</li></a></div>
+     <div class="head "> <i class="fa fa-star"> </i>&nbsp; <a href="index.html" style="text-decoration: none;"> <li>home</li></a></div>
      <div class="head"> <i class="fa fa-truck"></i> &nbsp;<li>about us </li></div> 
     <div class="head"> <i class="fa fa-phone"> </i>&nbsp;<li>contuct us </li> </div> 
      <div class="head"><i class="fa fa-info-circle"></i> &nbsp;<li>help</li></div>  
      <div class="head"> <i class="fa fa-map-marker"></i> &nbsp;<li> terms and policeis</li></div> 
      <div class="head">  <i class=""></i>&nbsp;<li>yemen</li></div> 
      <div class="head">  <i class="fa fa-language"></i>&nbsp;<li>English</li></div>
-     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+     <a href="#" class="icon" id="active" onclick="display()"> 
       <i class="fa fa-bars"></i>
     </a>
     </ul>
@@ -161,24 +161,7 @@
   </section>
   <section>
     <h2 class="title-book">Current shows</h2>
-    <p id="demo"></p>
-    <script>
-    var deadline = new Date("Jan 27, 2022 15:37:25").getTime();
-    var x = setInterval(function() {
-    var now = new Date().getTime();
-    var t = deadline - now;
-    var days = Math.floor(t / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
-    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((t % (1000 * 60)) / 1000);
-    document.getElementById("demo").innerHTML = days + "d " 
-    + hours + "h " + minutes + "m " + seconds + "s ";
-        if (t < 0) {
-            clearInterval(x);
-            document.getElementById("demo").innerHTML = "EXPIRED";
-        }
-    }, 1000);
-    </script>
+   
     <div class="current">
      
       <div class="showbook target">
@@ -187,20 +170,22 @@
      <p>Harrry Botter(electronic book)</p>
       <p>17.99YER</p>
     <div class="addprod">
-      <div class=""><i class="fa fa-star"></i></div>
+      <div class="star"><i class="fa fa-star"></i></div>
       <div class=" baskets addtocart"><a href="" > <i class=" fa fa-cart-plus"></i></a></div>
-      <div class=""><i class=""></i></div>
+      <div class="star"><i class="fa fa-compress"></i></div>
     </div>
   </div>
       <div class="showbook target">
         <a href="detailes.html"> <img src="images/jbb282204031.jpg" alt=""></a> <br><i class="fa fa-book">electronic book</i>
         <p>Harrry Botter(electronic book)</p>
       <p>17.99YER</p>
+      <p id="demo"></p>
+     
     <div class="addprod">
       
-      <div class=""><i class="fa fa-star"></i></div>
+      <div class="star"><i class="fa fa-star"></i></div>
       <div class="baskets addtocart"><a  href="#"><i class="fa fa-cart-plus"></i></a></div>
-      <div class=""><i class=""></i></div>
+      <div class="star"><i class="fa fa-compress"></i></div>
     </div>
   </div>
      
@@ -208,28 +193,32 @@
       <div class="showbook target"><a href="detailes.html"><img src="images/jbb6260na223.jpg" alt=""> </a><br><i class="fa fa-book">electronic book</i>
         <p>Harrry Botter(electronic book)</p>
       <p>17.99YER</p>
+      <p id="demo1"></p>
+      
     <div class="addprod">
-      <div class=""><i class="fa fa-star"></i></div>
+      <div class="star"><i class="fa fa-star"></i></div>
       <div class=" baskets addtocart"><a  href="#"><i class="fa fa-cart-plus"></i></a></div>
-      <div class=""><i class=""></i></div>
+      <div class="star"><i class="fa fa-compress"></i></div>
     </div>
   </div>
   <div class="showbook target"><a href="detailes.html"><img src="images/jrb2855866.jpg" alt=""></a> <br><i class="fa fa-book">electronic book</i>
     <p>Harrry Botter(electronic book)</p>
   <p>17.99YER</p>
+  <p id="demo"></p>
 <div class="addprod">
-  <div class=""><i class="fa fa-star"></i></div>
+  <div class="star"><i class="fa fa-star"></i></div>
   <div class="baskets addtocart"><a   href="#"><i class="fa fa-cart-plus"></i></a></div>
-  <div class=""><i class=""></i></div>
+  <div class="star"><i class="fa fa-compress"></i></div>
 </div>
 </div>
 <div class="showbook target"> <a href="detailes.html"><img src="images/jbb2060ns2254.jpg" alt=""></a> <br><i class="fa fa-book">electronic book</i>
   <p>Harrry Botter(electronic book)</p>
 <p>17.99YER</p>
+<p id="demo"></p>
 <div class="addprod">
-<div class=""><i class="fa fa-star"></i></div>
+<div class="star"><i class="fa fa-star"></i></div>
 <div class=" baskets addtocart"><a  href="#"><i class="fa fa-cart-plus"></i></a></div>
-<div class=""><i class=""></i></div>
+<div class="star"><i class="fa fa-compress"></i></div>
 </div>
 </div>
 
@@ -245,21 +234,23 @@
       <i class="fa fa-book">electronic book</i>
      <p>Harrry Botter(electronic book)</p>
       <p>17.99YER</p>
+      <p id="demo"></p>
     <div class="addprod">
-      <div class=""><i class="fa fa-star"></i></div>
+      <div class="star"><i class="fa fa-star"></i></div>
       <div class=" baskets addtocart"><a href="" > <i class=" fa fa-cart-plus"></i></a></div>
-      <div class=""><i class="fa fa-compress"></i></div>
+      <div class="star"><i class="fa fa-compress"></i></div>
     </div>
   </div>
       <div class="showbook target">
         <a href="detailes.html">   <img src="images/jbb282204031.jpg" alt=""></a> <br><i class="fa fa-book">electronic book</i>
         <p>Harrry Botter(electronic book)</p>
       <p>17.99YER</p>
+      <p id="demo"></p>
     <div class="addprod">
       
-      <div class=""><i class="fa fa-star"></i></div>
+      <div class="star"><i class="fa fa-star"></i></div>
       <div class="baskets addtocart"><a  href="#"><i class="fa fa-cart-plus"></i></a></div>
-      <div class=""><i class="fa fa-compress"></i></div>
+      <div class="star"><i class="fa fa-compress"></i></div>
     </div>
   </div>
      
@@ -267,28 +258,31 @@
       <div class="showbook target"><a href="detailes.html"><img src="images/jbb6260na223.jpg" alt=""> </a><br><i class="fa fa-book">electronic book</i>
         <p>Harrry Botter(electronic book)</p>
       <p>17.99YER</p>
+      <p id="demo"></p>
     <div class="addprod">
-      <div class=""><i class="fa fa-star"></i></div>
+      <div class="star"><i class="fa fa-star"></i></div>
       <div class=" baskets addtocart"><a  href="#"><i class="fa fa-cart-plus"></i></a></div>
-      <div class=""><i class="fa fa-compress"></i></div>
+      <div class="star"><i class="fa fa-compress"></i></div>
     </div>
   </div>
   <div class="showbook target"><a href="detailes.html"><img src="images/jrb2855866.jpg" alt=""></a> <br><i class="fa fa-book">electronic book</i>
     <p>Harrry Botter(electronic book)</p>
   <p>17.99YER</p>
+  <p id="demo"></p>
 <div class="addprod">
-  <div class=""><i class="fa fa-star"></i></div>
+  <div class="star"><i class="fa fa-star"></i></div>
   <div class="baskets addtocart"><a   href="#"><i class="fa fa-cart-plus"></i></a></div>
-  <div class=""><i class="fa fa-compress"></i></div>
+  <div class="star"><i class="fa fa-compress"></i></div>
 </div>
 </div>
 <div class="showbook target"><a href="detailes.html"><img src="images/jbb2060ns2254.jpg" alt=""> </a><br><i class="fa fa-book">electronic book</i>
   <p>Harrry Botter(electronic book)</p>
 <p>17.99YER</p>
+<p id="demo"></p>
 <div class="addprod">
-<div class=""><i class="fa fa-star"></i></div>
+<div class="star"><i class="fa fa-star"></i></div>
 <div class=" baskets addtocart"><a  href="#"><i class="fa fa-cart-plus"></i></a></div>
-<div class=""><i class="fa fa-compress"></i></div>
+<div class="star"><i class="fa fa-compress"></i></div>
 </div>
 </div>
 
@@ -305,9 +299,9 @@
      <p>Harrry Botter(electronic book)</p>
       <p>17.99YER</p>
     <div class="addprod">
-      <div class=""><i class="fa fa-star"></i></div>
+      <div class="star"><i class="fa fa-star"></i></div>
       <div class=" baskets addtocart"><a href="" > <i class=" fa fa-cart-plus"></i></a></div>
-      <div class=""><i class="fa fa-compress"></i></div>
+      <div class="star"><i class="fa fa-compress"></i></div>
     </div>
   </div>
       <div class="showbook target">
@@ -316,9 +310,9 @@
       <p>17.99YER</p>
     <div class="addprod">
       
-      <div class=""><i class="fa fa-star"></i></div>
+      <div class="star"><i class="fa fa-star"></i></div>
       <div class="baskets addtocart"><a  href="#"><i class="fa fa-cart-plus"></i></a></div>
-      <div class=""><i class="fa fa-compress"></i></div>
+      <div class="star"><i class="fa fa-compress"></i></div>
     </div>
   </div>
      
@@ -327,27 +321,27 @@
         <p>Harrry Botter(electronic book)</p>
       <p>17.99YER</p>
     <div class="addprod">
-      <div class=""><i class="fa fa-star"></i></div>
+      <div class="star"><i class="fa fa-star"></i></div>
       <div class=" baskets addtocart"><a  href="#"><i class="fa fa-cart-plus"></i></a></div>
-      <div class=""><i class="fa fa-compress"></i></div>
+      <div class="star"><i class="fa fa-compress"></i></div>
     </div>
   </div>
   <div class="showbook target"><img src="images/jrb2855866.jpg" alt=""> <br><i class="fa fa-book">electronic book</i>
     <p>Harrry Botter(electronic book)</p>
   <p>17.99YER</p>
 <div class="addprod">
-  <div class=""><i class="fa fa-star"></i></div>
+  <div class="star"><i class="fa fa-star"></i></div>
   <div class="baskets addtocart"><a   href="#"><i class="fa fa-cart-plus"></i></a></div>
-  <div class=""><i class="fa fa-compress"></i></div>
+  <div class="star"><i class="fa fa-compress"></i></div>
 </div>
 </div>
 <div class="showbook target"><img src="images/jbb2060ns2254.jpg" alt=""> <br><i class="fa fa-book">electronic book</i>
   <p>Harrry Botter(electronic book)</p>
 <p>17.99YER</p>
 <div class="addprod">
-<div class=""><i class="fa fa-star"></i></div>
+<div class="star"><i class="fa fa-star"></i></div>
 <div class=" baskets addtocart"><a  href="#"><i class="fa fa-cart-plus"></i></a></div>
-<div class=""><i class="fa fa-compress"></i></div>
+<div class="star"><i class="fa fa-compress"></i></div>
 </div>
 </div>
 
@@ -432,5 +426,39 @@
   <script src="js/app.js"> 
     
   </script>
+   <script>
+    var deadline = new Date("Jan 27, 2022 15:37:25").getTime();
+    var x = setInterval(function() {
+    var now = new Date().getTime();
+    var t = deadline - now;
+    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((t % (1000 * 60)) / 1000);
+    document.getElementById("demo").innerHTML = days + "d " 
+    + hours + "h " + minutes + "m " + seconds + "s ";
+        if (t < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+    </script>
+     <script>
+      var deadline = new Date("Jan 27, 2022 15:37:25").getTime();
+      var x = setInterval(function() {
+      var now = new Date().getTime();
+      var t = deadline - now;
+      var days = Math.floor(t / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+      var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((t % (1000 * 60)) / 1000);
+      document.getElementById("demo1").innerHTML = days + "d " 
+      + hours + "h " + minutes + "m " + seconds + "s ";
+          if (t < 0) {
+              clearInterval(x);
+              document.getElementById("demo1").innerHTML = "EXPIRED";
+          }
+      }, 1000);
+      </script>
 </body>
 </html>

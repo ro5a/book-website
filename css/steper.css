@@ -32,7 +32,7 @@ main {
 .step--2,
 .step--3,
 .step--4 {
-  border: 3px solid rgb(33, 112, 177);
+  border: 3px solid #42526e;
   border-radius: 100%;
   width: 25px;
   height: 25px;
@@ -56,8 +56,14 @@ main {
   border-radius: 5px;
   overflow: hidden;
 }
+@media screen and (max-width:600px){
+  .form{
+    margin: 10px;
+    width: 20rem;
+  }
+}
 .form--header-container {
-  background-color: rgb(33, 112, 177);
+  background-color: #42526e;
   color: #fff;
   height: 6rem;
   padding: 1rem 0;
@@ -76,7 +82,7 @@ input[type="text"] {
   padding: 0.8rem;
   margin: auto;
   margin-top: 0.5rem;
-  width: 20rem;
+  width: 15rem;
   display: block;
   border-radius: 0.5rem;
   outline: none;
@@ -130,9 +136,9 @@ input[type="text"] {
 }
 
 .step-active {
-  background: rgb(33, 112, 177);
+  background: #42526e;
   color: #fff;
-  border: 1px solid rgb(33, 112, 177);
+  border: 1px solid #42526e;
 }
 @keyframes moveRight {
   0% {
