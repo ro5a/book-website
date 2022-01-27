@@ -153,12 +153,15 @@ nav .icon{
   cursor: pointer;
 }
 /* ************************************************* */
-
+#demo{
+  color: #d40b0e;
+  margin-left:30px ;
+}
 .showbook{
   border: 1px solid rgb(201, 200, 200);
   border-radius: 5px;
   padding: 10px;
-  margin: 10px;
+ margin: 5px;
   display: grid;
   grid-template-rows: auto auto auto auto;
   justify-content: center;
