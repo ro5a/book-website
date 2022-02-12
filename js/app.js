@@ -43,18 +43,22 @@ $(document).ready(function(){
 
 //search
 function myFunction() {
-  var input = document.getElementById("Search");
-  var filter = input.value.toLowerCase();
-  var nodes = document.getElementsByClassName('target');
-
-  for (i = 0; i < nodes.length; i++) {
-    if (nodes[i].innerText.toLowerCase().includes(filter)) {
-      nodes[i].style.display = "block";
+  var input, filter, cards, cardContainer, title, i;
+  input = document.getElementById("myFilter");
+  filter = input.value.toUpperCase();
+  cardContainer = document.getElementById("more");
+  cards = cardContainer.getElementsByClassName("showbook1");
+  for (i = 0; i < cards.length; i++) {
+    title = cards[i].querySelector(".card-title");
+    if (title.innerText.toUpperCase().indexOf(filter) > -1) {
+      cards[i].style.display = "";
     } else {
-      nodes[i].style.display = "none";
+      cards[i].style.display = "none";
     }
   }
 }
+
+
 // navigation bar
 function myFunction() {
   var x = document.getElementById("myTopnav");
