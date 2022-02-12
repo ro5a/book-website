@@ -93,7 +93,7 @@ nav .icon{
     background-color: #eff2f7;
     padding: 10px;
     font-size:30px;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 40px;
     
     
@@ -107,8 +107,8 @@ nav .icon{
    
 
 }
-@media screen and(max-width:600px) {
-.search{
+@media screen and (max-width: 600px) {
+  .head2 .search{
   border: solid #eff2f7;
   background-color: #eff2f7;
   padding: 10px;
