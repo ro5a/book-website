@@ -82,37 +82,49 @@ nav .icon{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 20px;
+    margin: 10px;
     color: #42526e;
     
 }
-.head2 a{
-  text-decoration: none;
-}
+
 .shop{
     border: solid #eff2f7;
     border-radius: 50%;
     background-color: #eff2f7;
     padding: 10px;
     font-size:30px;
-    margin-left:10px;
-    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 40px;
+    
+    
 }
 .search{
     border: solid #eff2f7;
     background-color: #eff2f7;
     padding: 10px;
-    width: 100%;
+    width: 700px;
     border-radius: 50px;
    
 
+}
+@media screen and(max-width:600px) {
+.search{
+  border: solid #eff2f7;
+  background-color: #eff2f7;
+  padding: 10px;
+  width: 300px;
+  border-radius: 50px;
+ 
+
+}
+  
 }
 .container{
     position: relative;
 }
 .seacrhi{
     position: absolute;
-  top: 25px;
+  top: 27px;
   right: 25px;
 }
 .head{
@@ -131,11 +143,16 @@ nav .icon{
     
 
 }
+.category a{
+  cursor: pointer;
+}
 .category div{
     border: 1px solid rgb(228, 226, 226);
+    box-shadow: 2px 2px rgb(189, 186, 186);
+    border-radius: 5px;
     font-size: 20px;
     
-    padding: 40px;
+    padding: 30px;
     margin: 5px;
 }
 
